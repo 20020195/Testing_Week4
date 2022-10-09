@@ -1,5 +1,3 @@
-import java.sql.SQLClientInfoException;
-
 public class Week4 {
     public static String GiaVe(int a){
         String s="";
