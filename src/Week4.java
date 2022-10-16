@@ -9,9 +9,7 @@ public class Week4 {
             s = "30000 đồng";
         }else if (a >= 20 && a <= 59) {
             s = "50000 đồng";
-        }else if (a >= 60 && a <= 120) {
-            s = "30000 đồng";
-        }
+        }else /*if (a >= 60 && a <= 120)*/ s = "30000 đồng";
         return s;
     }
 }
