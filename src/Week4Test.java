@@ -3,7 +3,7 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class Week4Test {
-
+//  Test theo giá trị biên
     @Test
     public void Out_Of_Min(){
         int a = -1;
@@ -116,6 +116,7 @@ public class Week4Test {
         assertEquals(expected,actual);
     }
 
+//  Test theo bảng quyết định
     @Test
     public void Test1(){
         int a = 1000;
@@ -147,6 +148,42 @@ public class Week4Test {
     @Test
     public void Test5(){
         int a = 119;
+        String expected = "30000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+// Test theo dong dieu kien
+    @Test
+    public void C1(){
+        int a = 125;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C2(){
+        int a = 3;
+        String expected = "Miễn Phí";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C3(){
+        int a = 16;
+        String expected = "30000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C4(){
+        int a = 28;
+        String expected = "50000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void C5(){
+        int a = 70;
         String expected = "30000 đồng";
         String actual = Week4.GiaVe(a);
         assertEquals(expected, actual);
