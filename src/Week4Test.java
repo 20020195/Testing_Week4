@@ -188,5 +188,41 @@ public class Week4Test {
         String actual = Week4.GiaVe(a);
         assertEquals(expected, actual);
     }
+    // kiểm thử dòng dữ liệu
+    @Test
+    public void Dl1(){
+        int a = 130;
+        String expected = "Độ tuổi không hợp lệ. Xin nhập lại";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void Dl2(){
+        int a = 3;
+        String expected = "Miễn Phí";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void Dl3(){
+        int a = 13;
+        String expected = "30000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void Dl4(){
+        int a = 23;
+        String expected = "50000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void Dl5(){
+        int a = 63;
+        String expected = "30000 đồng";
+        String actual = Week4.GiaVe(a);
+        assertEquals(expected, actual);
+    }
 
 }
